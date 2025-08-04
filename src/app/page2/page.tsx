@@ -18,7 +18,7 @@ export default function Page2() {
         </nav>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          <div className="w-32 h-32 bg-red-500 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+          <div className="w-32 h-32 bg-blue-500 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
             <span className="text-white font-bold text-sm">❤️ Crimson</span>
           </div>
           <div className="w-32 h-32 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
