@@ -13,7 +13,7 @@ export default function Page1() {
             href="/page2"
             className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Go to Page 2
+           Page 2
           </Link>
         </nav>
 
