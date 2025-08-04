@@ -4,7 +4,7 @@ export default function Page1() {
   return (
     <main className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold text-center mb-8 text-gradient bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold text-center mb-8 text-gradient bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
           🎨 Page 1 - Colorful Test!
         </h1>
 
