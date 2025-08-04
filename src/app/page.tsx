@@ -4,8 +4,8 @@ export default function Page1() {
   return (
     <main className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 text-purple-600">
-          Page 1 - Updated!
+        <h1 className="text-4xl font-bold text-center mb-8 text-gradient bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+          🎨 Page 1 - Colorful Test!
         </h1>
 
         <nav className="flex justify-center mb-8">
@@ -18,20 +18,20 @@ export default function Page1() {
         </nav>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          <div className="w-32 h-32 bg-green-100 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-green-800 font-semibold">Green 1</span>
+          <div className="w-32 h-32 bg-gradient-to-br from-pink-400 to-red-500 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center">
+            <span className="text-white font-bold text-sm">🌸 Pink</span>
           </div>
-          <div className="w-32 h-32 bg-purple-200 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-purple-800 font-semibold">Purple 2</span>
+          <div className="w-32 h-32 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center">
+            <span className="text-white font-bold text-sm">🔥 Fire</span>
           </div>
-          <div className="w-32 h-32 bg-blue-300 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-blue-800 font-semibold">Blue 3</span>
+          <div className="w-32 h-32 bg-gradient-to-br from-green-400 to-teal-500 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center">
+            <span className="text-white font-bold text-sm">🌊 Ocean</span>
           </div>
-          <div className="w-32 h-32 bg-blue-400 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-blue-800 font-semibold">Blue 4</span>
+          <div className="w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center">
+            <span className="text-white font-bold text-sm">💜 Magic</span>
           </div>
-          <div className="w-32 h-32 bg-blue-500 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-white font-semibold">Blue 5</span>
+          <div className="w-32 h-32 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center">
+            <span className="text-white font-bold text-sm">🌌 Galaxy</span>
           </div>
         </div>
       </div>
