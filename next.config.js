@@ -5,9 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/Chain-Calculator" : "",
-  assetPrefix:
-    process.env.NODE_ENV === "production" ? "/Chain-Calculator/" : "",
+  // Only use basePath/assetPrefix for GitHub Pages, not in CI
+  basePath: process.env.GITHUB_PAGES === "true" ? "/Chain-Calculator" : "",
+  assetPrefix: process.env.GITHUB_PAGES === "true" ? "/Chain-Calculator/" : "",
 };
 
 module.exports = nextConfig;
