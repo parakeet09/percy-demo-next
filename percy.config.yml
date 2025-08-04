@@ -10,9 +10,18 @@ snapshot:
     .animate-pulse {
       display: none !important;
     }
+    /* Disable animations for consistent snapshots */
+    *, *::before, *::after {
+      animation-duration: 0s !important;
+      animation-delay: 0s !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
 discovery:
   # Allow Percy to wait for network requests and animations
   request-headers:
     User-Agent: Percy
-  # Network idle timeout
+  # Network idle timeout - wait for all network requests to complete
   network-idle-timeout: 750
+  # Allow more time for page to stabilize
+  wait-for-timeout: 2000
