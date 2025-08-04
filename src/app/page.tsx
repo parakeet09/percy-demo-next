@@ -18,8 +18,8 @@ export default function Page1() {
         </nav>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          <div className="w-32 h-32 bg-blue-100 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-blue-800 font-semibold">Blue 1</span>
+          <div className="w-32 h-32 bg-green-100 rounded-lg shadow-md flex items-center justify-center">
+            <span className="text-green-800 font-semibold">Green 1</span>
           </div>
           <div className="w-32 h-32 bg-blue-200 rounded-lg shadow-md flex items-center justify-center">
             <span className="text-blue-800 font-semibold">Blue 2</span>
