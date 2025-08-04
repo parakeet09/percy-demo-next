@@ -1,0 +1,86 @@
+name: Percy Visual Regression
+
+# Run on PRs against main and on pushes to main
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  # ————————————————
+  # 1) PR diff builds
+  # ————————————————
+  pr-diffs:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: Start Next.js server
+        run: npm start &
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:3000
+
+      - name: Percy snapshot (PR)
+        uses: percy/exec-action@v0.3.1
+        with:
+          command: npx percy snapshot snapshots.yml
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          # Compare this PR branch (head) against main (target)
+          PERCY_BRANCH: ${{ github.head_ref }}
+          PERCY_TARGET_BRANCH: ${{ github.base_ref }}
+
+
+  # —————————————————————
+  # 2) Update main baseline
+  # —————————————————————
+  update-baseline:
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: Start Next.js server
+        run: npm start &
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:3000
+
+      - name: Percy snapshot (main baseline)
+        uses: percy/exec-action@v0.3.1
+        with:
+          command: npx percy snapshot snapshots.yml
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          # Tell Percy that head & baseline are both main
+          PERCY_BRANCH: main
+          PERCY_TARGET_BRANCH: main
