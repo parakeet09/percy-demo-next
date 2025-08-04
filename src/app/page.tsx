@@ -4,8 +4,8 @@ export default function Page1() {
   return (
     <main className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-8 bg-gradient-to-r from-emerald-400 via-cyan-500 to-blue-600 bg-clip-text text-transparent animate-bounce">
-          ✨ Percy Test - Final Version! ✨
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+          📊 Page 1 - Simple Baseline
         </h1>
 
         <nav className="flex justify-center mb-8">
@@ -18,20 +18,20 @@ export default function Page1() {
         </nav>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          <div className="w-32 h-32 bg-gradient-to-br from-rose-400 to-pink-600 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center border-2 border-white">
-            <span className="text-white font-bold text-sm">� Rose</span>
+          <div className="w-32 h-32 bg-blue-200 rounded-lg shadow-md flex items-center justify-center">
+            <span className="text-blue-800 font-semibold">Blue 1</span>
           </div>
-          <div className="w-32 h-32 bg-gradient-to-br from-amber-400 to-orange-600 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center border-2 border-white">
-            <span className="text-white font-bold text-sm">🔥 Blaze</span>
+          <div className="w-32 h-32 bg-blue-300 rounded-lg shadow-md flex items-center justify-center">
+            <span className="text-blue-800 font-semibold">Blue 2</span>
           </div>
-          <div className="w-32 h-32 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center border-2 border-white">
-            <span className="text-white font-bold text-sm">� Forest</span>
+          <div className="w-32 h-32 bg-blue-400 rounded-lg shadow-md flex items-center justify-center">
+            <span className="text-blue-800 font-semibold">Blue 3</span>
           </div>
-          <div className="w-32 h-32 bg-gradient-to-br from-violet-400 to-purple-600 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center border-2 border-white">
-            <span className="text-white font-bold text-sm">� Mystic</span>
+          <div className="w-32 h-32 bg-blue-500 rounded-lg shadow-md flex items-center justify-center">
+            <span className="text-white font-semibold">Blue 4</span>
           </div>
-          <div className="w-32 h-32 bg-gradient-to-br from-sky-400 to-indigo-600 rounded-xl shadow-lg hover:shadow-xl transform hover:rotate-3 transition-all duration-300 flex items-center justify-center border-2 border-white">
-            <span className="text-white font-bold text-sm">🌌 Cosmic</span>
+          <div className="w-32 h-32 bg-blue-600 rounded-lg shadow-md flex items-center justify-center">
+            <span className="text-white font-semibold">Blue 5</span>
           </div>
         </div>
       </div>
