@@ -4,8 +4,8 @@ export default function Page1() {
   return (
     <main className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-          Page 1
+        <h1 className="text-4xl font-bold text-center mb-8 text-purple-600">
+          Page 1 - Updated!
         </h1>
 
         <nav className="flex justify-center mb-8">
@@ -21,8 +21,8 @@ export default function Page1() {
           <div className="w-32 h-32 bg-green-100 rounded-lg shadow-md flex items-center justify-center">
             <span className="text-green-800 font-semibold">Green 1</span>
           </div>
-          <div className="w-32 h-32 bg-blue-200 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-blue-800 font-semibold">Blue 2</span>
+          <div className="w-32 h-32 bg-purple-200 rounded-lg shadow-md flex items-center justify-center">
+            <span className="text-purple-800 font-semibold">Purple 2</span>
           </div>
           <div className="w-32 h-32 bg-blue-300 rounded-lg shadow-md flex items-center justify-center">
             <span className="text-blue-800 font-semibold">Blue 3</span>
