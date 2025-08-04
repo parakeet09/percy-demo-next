@@ -2,7 +2,6 @@
   url: http://localhost:3000/
   widths: [375, 768, 1280]
 
-- name: Page 2 - Red Boxes  
+- name: Page 2 - Red Boxes
   url: http://localhost:3000/page2
-  widths: [375, 768, 1280]name: Homepage
-  url: http://localhost:3000/
+  widths: [375, 768, 1280]
