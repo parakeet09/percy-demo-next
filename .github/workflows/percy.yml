@@ -30,11 +30,8 @@ jobs:
       - name: Build Next.js app
         run: npm run build
 
-      - name: Install serve
-        run: npm install -g serve
-
-      - name: Start server
-        run: serve out -l 3000 &
+      - name: Start Next.js server
+        run: npm start &
 
       - name: Wait for server
         run: |
@@ -73,11 +70,8 @@ jobs:
       - name: Build Next.js app
         run: npm run build
 
-      - name: Install serve
-        run: npm install -g serve
-
-      - name: Start server
-        run: serve out -l 3000 &
+      - name: Start Next.js server
+        run: npm start &
 
       - name: Wait for server
         run: |

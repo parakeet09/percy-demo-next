@@ -1,0 +1,18 @@
+# Percy configuration for production-ready setup
+version: 2
+snapshot:
+  widths: [375, 768, 1280]
+  min-height: 1024
+  percy-css: |
+    /* Hide dynamic content that might cause flaky tests */
+    [data-testid="timestamp"],
+    .animate-spin,
+    .animate-pulse {
+      display: none !important;
+    }
+discovery:
+  # Allow Percy to wait for network requests and animations
+  request-headers:
+    User-Agent: Percy
+  # Network idle timeout
+  network-idle-timeout: 750

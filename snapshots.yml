@@ -1,7 +1,17 @@
-- name: Page 1 - Blue Boxes
+- name: Home Page - Gradient Boxes
   url: http://localhost:3000/
   widths: [375, 768, 1280]
+  min_height: 1024
+  # Wait for animations to complete
+  execute_script: |
+    // Wait for any CSS transitions/animations to complete
+    return new Promise(resolve => setTimeout(resolve, 1000));
 
-- name: Page 2 - Red Boxes
+- name: Page 2 - Sunset Theme
   url: http://localhost:3000/page2
   widths: [375, 768, 1280]
+  min_height: 1024
+  # Wait for animations to complete
+  execute_script: |
+    // Wait for any CSS transitions/animations to complete
+    return new Promise(resolve => setTimeout(resolve, 1000));
