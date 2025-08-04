@@ -4,8 +4,8 @@ export default function Page2() {
   return (
     <main className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-          Page 2
+        <h1 className="text-4xl font-bold text-center mb-8 text-orange-600">
+          Page 2 - Also Updated!
         </h1>
 
         <nav className="flex justify-center mb-8">
